@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Central - Bloqueio de Dispositivos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .menu-container {
+      background: #1e1e1e;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #4db8ff;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 25px;
+      color: #ccc;
+    }
+
+    .menu-btn {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      background: linear-gradient(135deg, #4db8ff, #0077cc);
+      color: white;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .menu-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #66ccff, #0099ff);
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-container">
+    <h1>🔒 Menu Central</h1>
+    <p>Selecione um serviço para bloquear ou rastrear seu dispositivo</p>
+
+    <!-- Botões de acesso -->
+    <button class="menu-btn" onclick="openSite('https://www.google.com/android/find')">🤖 Google - Encontre Meu Dispositivo</button>
+    <button class="menu-btn" onclick="openSite('https://www.icloud.com/find')">🍎 Apple - Buscar iPhone (Find My)</button>
+    <button class="menu-btn" onclick="openSite('https://www.consultaaparelhoimpedido.com.br/public-web/welcome')">📶 Consulta IMEI - Aparelho Impedido</button>
+    <button class="menu-btn" onclick="openSite('https://www.airdroid.com/pt/mdm/lock-phone-remotely/')">🌐 AirDroid Business</button>
+    <button class="menu-btn" onclick="openSite('https://www.psafe.com/dfndr-security')">🛡️ dfndr security (PSafe)</button>
+
+    <footer>EDCELLTECH © 2025 - Central de Segurança</footer>
+  </div>
+
+  <script>
+    function openSite(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
